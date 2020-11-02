@@ -47,6 +47,12 @@ function getFileContent(fileName){
 
 getFileContent('a.json').then(aData =>{
     console.log('a Data',aData)
+    return getFileContent(aData.next)
+}).then(bData =>{
+    console.log('b Data',bData)
+    return getFileContent(bData.next)
+}).then(cData =>{
+    console.log('c Data',cData)
 })
 
 

@@ -1,4 +1,4 @@
-const { getList,getDetail } = require('../controller/blog')
+const { getList,getDetail,newBlog } = require('../controller/blog')
 const { SuccessModel,ErrorModel} = require('../module/resModel')
 const handBlogRouter = (req,res) => {
     const method = req.method
@@ -8,8 +8,6 @@ const handBlogRouter = (req,res) => {
         const keyword = req.query.keyword || ''
         const listData = getList(author,keyword)
         return new SuccessModel(listData)
-
-
     }
     // 获取博客详情
     if(method === 'GET' && req.path === '/api/blog/detail'){
@@ -19,9 +17,8 @@ const handBlogRouter = (req,res) => {
     }
     // 新增一篇博客
     if(method === 'POST' && req.path === '/api/blog/new'){
-        return {
-            msg:'这是新建博客的接口'
-        }
+        const data = newBlog(req.body)
+        return new SuccessModel(data)
     }
     // 更新一篇博客
     if(method === 'POST' && req.path === '/api/blog/update'){

@@ -33,8 +33,21 @@ const newBlog = (blogData = {}) =>{
         id:3
     }
 }
+
+const updateBlog = ( id, blogData = {}) =>{
+    // id 要更新的博客
+    console.log('updata...',id,blogData)
+    return true
+}
+
+const delBlog = ( id)=>{
+    console.log('已删除')
+    return true
+}
 module.exports = {
     getList,
     getDetail,
-    newBlog
+    newBlog,
+    updateBlog,
+    delBlog
 }

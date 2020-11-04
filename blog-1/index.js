@@ -37,7 +37,7 @@ const severHandle = (req,res) => {
     req.path = url.split('?')[0]
 
     //解析 query
-    req.query = querystring.parse(url.split('?')[0])
+    req.query = querystring.parse(url.split('?')[1])
 
     getPostData(req).then(postData =>{
         req.body = postData

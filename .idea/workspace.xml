@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06f57629-5f50-4dc9-8b47-aa62bcc5d530" name="默认的" comment="" />
+    <list default="true" id="06f57629-5f50-4dc9-8b47-aa62bcc5d530" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/controller/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/router/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/router/user.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +16,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jappbH91gwkPJzNcOcz3SrzCrQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,6 +58,8 @@
       <updated>1604052241156</updated>
       <workItem from="1604052242217" duration="3444000" />
       <workItem from="1604280401709" duration="24077000" />
+      <workItem from="1604369428653" duration="1835000" />
+      <workItem from="1604480792184" duration="5477000" />
     </task>
     <servers />
   </component>
@@ -63,9 +75,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1149" y="253" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604301744474" />
-    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604289162507">
+    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604487283865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604289162507" />
+    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604487283865" />
   </component>
 </project>

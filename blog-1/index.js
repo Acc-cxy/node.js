@@ -47,7 +47,6 @@ const severHandle = (req,res) => {
             res.end(
                 JSON.stringify(blogData)
             )
-            console.log(9)
             return false
         }
         // 处理user路由

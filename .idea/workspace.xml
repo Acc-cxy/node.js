@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06f57629-5f50-4dc9-8b47-aa62bcc5d530" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/controller/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/router/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/router/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +55,24 @@
       <workItem from="1604052242217" duration="3444000" />
       <workItem from="1604280401709" duration="24077000" />
       <workItem from="1604369428653" duration="1835000" />
-      <workItem from="1604480792184" duration="5477000" />
+      <workItem from="1604480792184" duration="5841000" />
+      <workItem from="1604541204820" duration="1038000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="986" y="353" width="526" height="536" key="find.popup" timestamp="1604310461453">

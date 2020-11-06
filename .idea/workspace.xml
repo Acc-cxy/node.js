@@ -28,9 +28,11 @@
     <list default="true" id="06f57629-5f50-4dc9-8b47-aa62bcc5d530" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/controller/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/src/module/resModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/module/resModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/router/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/controller/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/router/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_test/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,9 @@
       <workItem from="1604280401709" duration="24077000" />
       <workItem from="1604369428653" duration="1835000" />
       <workItem from="1604480792184" duration="5841000" />
-      <workItem from="1604541204820" duration="7341000" />
+      <workItem from="1604541204820" duration="7843000" />
+      <workItem from="1604628893942" duration="10484000" />
+      <workItem from="1604648092977" duration="1642000" />
     </task>
     <servers />
   </component>
@@ -113,6 +117,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
@@ -130,9 +135,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1149" y="253" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604301744474" />
-    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604487283865">
+    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604630170189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604487283865" />
+    <state x="180" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604630170189" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/blog-1/index.js</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

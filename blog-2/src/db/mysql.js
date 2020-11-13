@@ -1,13 +1,7 @@
 const mysql = require('mysql')
-// const {MYSQL_CONF} = require('../conf/db')
+const {MYSQL_CONF} = require('../conf/db')
 
-const con = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'root',
-    port:'3306',
-    database:'myblog'
-})
+const con = mysql.createConnection(MYSQL_CONF)
 
 con.connect()
 
@@ -18,7 +12,7 @@ function exec(sql){
                 reject(err)
                 return
             }
-            // console.log(result)
+            console.log(result)
 			// return result
 			// resolve.json(result); 
 			resolve(result)

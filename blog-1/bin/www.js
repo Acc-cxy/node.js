@@ -1,6 +1,6 @@
 const http = require('http')
 const hostname = '127.0.0.1';
-const PORT = 8000
+const PORT = 3000
 const severHandle = require('../index')
 const server = http.createServer(severHandle)
 // server.listen(PORT)

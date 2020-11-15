@@ -21,21 +21,41 @@ const getDetail = (id) => {
 }
 
 const newBlog = (blogData = {}) => {
-    console.log('newBlog blogData..,',newBlog)
-    return{
-        id:3
-    }
+    const title = blogData.title
+	const content = blogData.content
+	const author = blogData.author
+	const createtime = Date.now()
+	const sql = `insert into blogs (title,content,createtime,author)
+		values ('${title}','${content}',${createtime},'${author}')`
+	return exec(sql).then(inserData =>{
+		// console.log('new',inserData)
+		return {id: inserData.insertId}
+	})
 }
 
 const updateBlog = ( id, blogData = {}) =>{
     // id 要更新的博客
-    console.log('updata...',id,blogData)
-    return true
+    const title = blogData.title
+	const content = blogData.content
+	const sql = `update blogs set title="${title}",content="${content}" where id=${id}`
+	return exec(sql).then(updateData =>{
+		if(updateData.affectedRows>0){
+			return true
+			console.log(title)
+		}
+		return false
+	})
 }
 
 const delBlog = ( id )=>{
-    console.log('已删除')
-    return true
+    const sql = `delete from blogs where id=${id}`
+	return exec(sql).then(delData =>{
+		console.log(delData)
+		if(delData.affectedRows>0){
+			return true
+			
+		}
+	})
 }
 module.exports = {
     getList,

@@ -9,7 +9,7 @@ if(env === 'dev'){
         user:'root',
         password:'root',
         port:'3306',
-        database:'myblog'
+        database:'mysql'
     }
 }
 

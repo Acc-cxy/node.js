@@ -29,27 +29,37 @@ const handBlogRouter = (req,res) => {
     }
     // 新增一篇博客
     if(method === 'POST' && req.path === '/api/blog/new'){
-        const data = newBlog(req.body)
-        return new SuccessModel(data)
+        // const data = newBlog(req.body)
+        // return new SuccessModel(data)
+		// req.body.title = 'title'
+		// req.body.content = 'content'
+		req.body.author = 'lqg'
+		const result = newBlog(req.body)
+		return result.then(data =>{
+			return new SuccessModel(data)
+		})
     }
     // 更新一篇博客
     if(method === 'POST' && req.path === '/api/blog/update'){
         const result = updateBlog(id,req.body)
-        // console.log(updata)
-        if(result){
-            return new SuccessModel()
-        }else {
-            return new ErrorModel('No!!!')
-        }
+		return result.then(val=>{
+			if(val>0){
+			    return new SuccessModel()
+			}else {
+			    return new ErrorModel('No!!!')
+			}
+		})
     }
     // 删除一篇博客
     if(method === 'POST' && req.path === '/api/blog/del'){
         const result = delBlog(id)
-        if(result){
-            return new SuccessModel
-        }else {
-            return new ErrorModel('删除失败')
-        }
+		return result.then(val=>{
+			if(val>0){
+			    return new SuccessModel()
+			}else {
+			    return new ErrorModel('No!!!')
+			}
+		})
     }
 }
 

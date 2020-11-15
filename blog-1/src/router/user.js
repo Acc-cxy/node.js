@@ -7,10 +7,9 @@ const handUserRouter = (req,res) =>{
     if(method === 'POST' && req.path == '/api/user/login'){
         const { username, password } = req.body
         const result = loginCheck( username,password )
-        if( 1 == 1){
-            return new SuccessModel('登入成功')
-        }
-        return new ErrorModel('登入失败ss')
+		return result.then(rows=>{
+			
+		})
     }
 }
 

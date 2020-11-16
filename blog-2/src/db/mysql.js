@@ -12,8 +12,6 @@ function exec(sql){
                 reject(err)
                 return
             }
-			// return result
-			// resolve.json(result)
 			return resolve(result)
         })
     })

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ee74006-406b-499d-991d-bea82d9d89bc" name="默认的" comment="" />
+    <list default="true" id="8ee74006-406b-499d-991d-bea82d9d89bc" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/src/conf/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/conf/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/controller/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/controller/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/src/db/mysql.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/db/mysql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/router/user.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,9 +69,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="941" y="456" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605250222441" />
-    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605249861338">
+    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605512958155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605249861338" />
+    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605512958155" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/blog-2/index.js</url>
+          <line>89</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

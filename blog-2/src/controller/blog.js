@@ -8,7 +8,7 @@ const getList = (author,keyword) =>{
     if(keyword){
         sql += `and title like '%${keyword}%'`
     }
-	
+
     // sql += `order by createtime desc;`
     return exec(sql)
 }
@@ -16,7 +16,7 @@ const getList = (author,keyword) =>{
 const getDetail = (id) => {
     const sql = `select * from blogs where id = '${id}'`
     return exec(sql).then(rows =>{
-        return rows[0] 
+        return rows[0]
     })
 }
 
@@ -27,8 +27,9 @@ const newBlog = (blogData = {}) => {
 	const createtime = Date.now()
 	const sql = `insert into blogs (title,content,createtime,author)
 		values ('${title}','${content}',${createtime},'${author}')`
+    console.log('title',title)
+    console.log('content',content)
 	return exec(sql).then(inserData =>{
-		// console.log('new',inserData)
 		return {id: inserData.insertId}
 	})
 }
@@ -41,7 +42,6 @@ const updateBlog = ( id, blogData = {}) =>{
 	return exec(sql).then(updateData =>{
 		if(updateData.affectedRows>0){
 			return true
-			console.log(title)
 		}
 		return false
 	})
@@ -50,10 +50,9 @@ const updateBlog = ( id, blogData = {}) =>{
 const delBlog = ( id )=>{
     const sql = `delete from blogs where id=${id}`
 	return exec(sql).then(delData =>{
-		console.log(delData)
 		if(delData.affectedRows>0){
 			return true
-			
+
 		}
 	})
 }

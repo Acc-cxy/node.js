@@ -9,7 +9,7 @@ if(env === 'dev'){
         user:'root',
         password:'root',
         port:'3306',
-        database:'mysql'
+        database:'myblog'
     }
 }
 
@@ -21,7 +21,6 @@ if(env === 'production'){
         port:'3306',
         database:'myblog'
     }
-	console.log(1)
 }
 
 module.exports = {

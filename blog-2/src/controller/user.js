@@ -1,12 +1,13 @@
-const loginCheck = ( username,password ) => {
-    if( username === "zhangsan" && password === "zhangsan"){
-        console.log('登入成功')
-        return true
-    }
-    console.log('登入失败')
-    return false
+const {exec} = require('../db/mysql')
+
+const loginbtns = ( username,password ) => {
+    const sql = `select username,realname from users where username='${username}' and password='${password}'`
+
+    return exec(sql).then(data =>{
+        return data[0] || {}
+    })
 }
 
 module.exports = {
-    loginCheck
+    loginbtns
 }

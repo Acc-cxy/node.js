@@ -6,16 +6,34 @@ const {
     delBlog
 } = require('../controller/blog')
 const { SuccessModel,ErrorModel} = require('../module/resModel')
+
+//统一登录验证函数
+
+const loginCheck = (req) =>{
+    if( !req.session.username ){
+        return Promise.resolve(
+            new ErrorModel('尚未登录')
+        )
+    }
+}
+
 const handBlogRouter = (req,res) => {
     const method = req.method
     const id = req.query.id
     // 获取博客列表
     if(method === 'GET' && req.path === '/api/blog/list'){
-        const author = req.query.author || ''
-        const keyword = req.query.keyword || ''
-        // const listData = getList(author,keyword)
-        // return new SuccessModel(listData)
-        const result = getList(author,keyword)
+        let author = req.query.author || ''
+        let keyword = req.query.keyword || ''
+
+        if(req.query.isadmin){
+            const loginCheckresult = loginCheck(req)
+            if(loginCheckresult){
+                return loginCheckresult
+            }
+            author = req.session.username
+        }
+
+        let result = getList(author,keyword)
         return result.then(listData =>{
             return new SuccessModel(listData)
         })
@@ -23,6 +41,10 @@ const handBlogRouter = (req,res) => {
     // 获取博客详情
     if(method === 'GET' && req.path === '/api/blog/detail'){
         const result = getDetail(id)
+        const loginCheckresult = loginCheck(req)
+        if(loginCheckresult){
+            return loginCheckresult
+        }
         return result.then( data =>{
             return new SuccessModel(data)
         })
@@ -31,9 +53,12 @@ const handBlogRouter = (req,res) => {
     if(method === 'POST' && req.path === '/api/blog/new'){
         // const data = newBlog(req.body)
         // return new SuccessModel(data)
-		// req.body.title = 'title'
-		// req.body.content = 'content'
-		req.body.author = 'lqg'
+        const loginCheckresult = loginCheck(req)
+        if(loginCheckresult){
+            return loginCheckresult
+        }
+
+		req.body.author = req.session.username
 		const result = newBlog(req.body)
 		return result.then(data =>{
 			return new SuccessModel(data)
@@ -52,7 +77,8 @@ const handBlogRouter = (req,res) => {
     }
     // 删除一篇博客
     if(method === 'POST' && req.path === '/api/blog/del'){
-        const result = delBlog(id)
+        const author = req.session.username
+        const result = delBlog(id,author)
 		return result.then(val=>{
 			if(val>0){
 			    return new SuccessModel()

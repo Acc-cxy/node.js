@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8ee74006-406b-499d-991d-bea82d9d89bc" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-2/src/conf/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/conf/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-2/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/controller/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-2/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/controller/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-2/src/db/mysql.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/db/mysql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-2/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/router/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-2/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-2/src/router/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -58,30 +76,45 @@
       <workItem from="1605167948829" duration="10522000" />
       <workItem from="1605235185010" duration="27000" />
       <workItem from="1605237343795" duration="7057000" />
+      <workItem from="1605576449432" duration="11969000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="941" y="456" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605250222441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="941" y="456" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605250222441" />
-    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605512958155">
+    <state x="942" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605585329166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605512958155" />
+    <state x="942" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605585329166" />
+    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605580400948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1196" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605580400948" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/blog-2/index.js</url>
-          <line>89</line>
+          <url>file://$PROJECT_DIR$/redis-test/index.js</url>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

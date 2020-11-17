@@ -1,14 +1,14 @@
 const {exec} = require('../db/mysql')
 
 const getList = (author,keyword) =>{
-	const sql = `select * from blogs where 1=1`
+	let sql = `select * from blogs where 1=1`
     if(author){
         sql += `and author = '${author}'`
     }
     if(keyword){
         sql += `and title like '%${keyword}%'`
     }
-
+    // sql += `order by createtime desc;`
     // sql += `order by createtime desc;`
     return exec(sql)
 }

@@ -33,13 +33,13 @@
 <body>
     <h1>博客首页</h1>
     <div id="blog-container"></div>
-
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
     <script src="https://cdn.bootcss.com/moment.js/2.23.0/locale/zh-cn.js"></script>
     <script>
         // 发送 get 请求
         function get(url) {
+            // console.log(get(url))
             return $.get(url)
         }
 
@@ -85,7 +85,7 @@
                 $container.append($(`
                     <div class="title-wrapper">
                         <p class="title">
-                        <a href="/detail.html?id=${item.id}" target="_blank">${item.title}</a>
+                        <a href="/detail.html?id=${item.id}">${item.title}</a>
                         </p>
                         <div class="info-wrapper">
                             <span>
@@ -97,6 +97,7 @@
                 `))
             })
         })
+
     </script>
 </body>
 </html>

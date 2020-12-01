@@ -10,6 +10,4 @@ const loginbtns = ( username,password ) => {
     })
 }
 
-module.exports = {
-    loginbtns
-}
+module.exports = loginbtns

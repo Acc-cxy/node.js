@@ -27,10 +27,25 @@
             font-size: 14px;
             color: #999;
         }
+        .head{
+            display: inline-block;
+        }
+        .head h1{
+            float: left;
+        }
+        .head a{
+            float: left;
+            display: inline-block;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>博客首页</h1>
+    <div class="head">
+        <h1>博客首页</h1>
+        <a href="login.html"><h3>新建博客</h3></a>
+    </div>
     <div id="blog-container"></div>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
@@ -38,7 +53,6 @@
     <script>
         // 发送 get 请求
         function get(url) {
-            // console.log(get(url))
             return $.get(url)
         }
 
@@ -77,20 +91,19 @@
                 alert('数据错误')
                 return
             }
-
             // 遍历博客列表，并显示
             const data = res.data || []
-            data.forEach(item => {
+            data.forEach(items => {
                 $container.append($(`
                     <div class="title-wrapper">
                         <p class="title">
-                        <a href="/detail.html?id=${item.id}">${item.title}</a>
+                        <a href="/detail.html?id=${items.id}">${items.title}</a>
                         </p>
                         <div class="info-wrapper">
                             <span>
-                                <a href="/index.html?author=${item.author}">${item.author}</a>
+                                <a href="/index.html?author=${items.author}">${items.author}</a>
                             </span>
-                            <span>${getFormatDate(item.createtime)}</span>
+                            <span>${getFormatDate(items.createtime)}</span>
                         </div>
                     </div>
                 `))

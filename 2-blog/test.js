@@ -3,9 +3,10 @@ const app = express();
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password:'root',    // 改成你自己的密码
+    host: '8.131.236.131',
+    user: 'db_myblog',
+	port:'3306',
+    password:'db_myblog',    // 改成你自己的密码
     database:'myblog'    // 改成你的数据库名称
 });
 
@@ -23,7 +24,7 @@ app.all('*', function(req, res, next) {
 
 // 这里就是主要要修改的地方，其实也就一行
 // 把 address 改成你自己定的地址，就是连接访问的那个地址
-app.get('/address',function(err,res){
+app.get('/api/blog/list',function(err,res){
     const sql = 'select * from blogs'; // 写你需要的sql代码，你要是不会写那我就真的没办法了
     connection.query(sql,function(err,result){
             if(err){
@@ -36,7 +37,7 @@ app.get('/address',function(err,res){
         }); 
 })    
 
-var server = app.listen(8081, '127.0.0.1', function () {
+var server = app.listen(8085, 'localhost', function () {
 
     var host = server.address().address;
     var port = server.address().port;

@@ -1,0 +1,14 @@
+{
+  "apps":{
+      "name": "PM2-test",
+      "script": "./index.js",
+      "watch": true,
+      "ignore_watch": [
+        "node_modelus",
+        "logs"
+      ],
+      "error_file": "logs/err.log",
+      "out_file": "logs/out.log",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss"
+  }
+}
